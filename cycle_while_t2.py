@@ -5,7 +5,7 @@ dictionary = {
 def ask_user ():  
     while True:
         user_say = input ("Ask me a question: ")
-        if dictionary.get(user_say,0)!=0:
+        if user_say in dictionary:
             print(dictionary.get(user_say))
             break
         else:
